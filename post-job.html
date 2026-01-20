@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Post a Job - Job Portal</title>
+    </head>
+    <body>
+        <header>
+            <h1>Post a Job Opening</h1>
+            <p>Reach out to talented candidates</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Browse Jobs</a></li>
+                <li><a href="post-job.html">Post a Job</a></li>
+                <li><a href="apply.html">Apply</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="post-job-info">
+                <h2>Post Your Job Listing</h2>
+            </section>
+
+            <form action="submit-job" method="post">
+                <fieldset>
+                    <legend>Basic Job Information</legend>
+
+                    <label for="job_title">Job Title:</label><br />
+                    <input type="text" id="job_title" name="job_title" required placeholder="e.g., Senior Software Engineer" /><br /><br />
+
+                    <label for="company">Company Name:</label><br />
+                    <input type="text" id="company" name="company" required placeholder="Your company name" /><br /><br />
+
+                    <label for="location">Location:</label><br />
+                    <input type="text" id="location" name="location" required placeholder="e.g., Remote, San Francisco, CA" /><br /><br />
+
+                    <label for="job_type">Job Type:</label><br />
+                    <select id="job_type" name="job_type" required>
+                        <option value="">-- Select Job Type --</option>
+                        <option value="full-time">Full-time</option>
+                        <option value="part-time">Part-time</option>
+                        <option value="contract">Contract</option>
+                        <option value="temporary">Temporary</option>
+                        <option value="internship">Internship</option>
+                    </select><br /><br />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Job Details</legend>
+
+                    <label for="experience">Experience Required:</label><br />
+                    <input type="text" id="experience" name="experience" placeholder="e.g., 2+ years" /><br /><br />
+
+                    <label for="salary">Salary Range:</label><br />
+                    <input type="text" id="salary" name="salary" placeholder="e.g., $50,000 - $80,000" /><br /><br />
+
+                    <label for="description">Job Description:</label><br />
+                    <textarea id="description" name="description" rows="6" required placeholder="Describe the job role, responsibilities, and requirements..."></textarea><br /><br />
+
+                    <label for="skills">Required Skills:</label><br />
+                    <textarea id="skills" name="skills" rows="3" placeholder="List the key skills needed for this position..."></textarea><br /><br />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <label for="contact_person">Contact Person Name:</label><br />
+                    <input type="text" id="contact_person" name="contact_person" required /><br /><br />
+
+                    <label for="contact_email">Contact Email:</label><br />
+                    <input type="email" id="contact_email" name="contact_email" required /><br /><br />
+                </fieldset>
+
+                <button type="submit">Post Job</button>
+                <button type="reset">Clear Form</button>
+            </form>
+
+            <section id="guidelines">
+                <h2>Posting Guidelines</h2>
+                <ul>
+                    <li>Provide detailed and accurate job descriptions</li>
+                    <li>Be clear about salary and benefits</li>
+                    <li>Ensure contact information is correct</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Job Portal. All rights reserved.</p>
+            <p><a href="index.html">Return to Home</a></p>
+        </footer>
+    </body>
+</html>

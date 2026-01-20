@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apply for Job - Job Portal</title>
+    </head>
+    <body>
+        <header>
+            <h1>Job Application Form</h1>
+            <p>Apply for your dream job today</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Browse Jobs</a></li>
+                <li><a href="post-job.html">Post a Job</a></li>
+                <li><a href="apply.html">Apply</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="application-info">
+                <h2>Submit Your Application</h2>
+                <p><strong>All fields marked with * are required</strong></p>
+            </section>
+
+            <form action="submit-application" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="name">Full Name: <span>*</span></label><br />
+                    <input type="text" id="name" name="name" required placeholder="Your full name" /><br /><br />
+
+                    <label for="email">Email Address: <span>*</span></label><br />
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com" /><br /><br />
+
+                    <label for="phone">Phone Number: <span>*</span></label><br />
+                    <input type="tel" id="phone" name="phone" required placeholder="+1 (555) 123-4567" /><br /><br />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Professional Information</legend>
+
+                    <label for="job_title">Applying For (Job Title): <span>*</span></label><br />
+                    <input type="text" id="job_title" name="job_title" required placeholder="e.g., Web Developer" /><br /><br />
+
+                    <label for="experience">Years of Experience:</label><br />
+                    <select id="experience" name="experience">
+                        <option value="">-- Select Experience Level --</option>
+                        <option value="0">Fresher</option>
+                        <option value="1-2">1-2 years</option>
+                        <option value="3-5">3-5 years</option>
+                        <option value="5-10">5-10 years</option>
+                        <option value="10+">10+ years</option>
+                    </select><br /><br />
+
+                    <label for="skills">Your Key Skills:</label><br />
+                    <textarea id="skills" name="skills" rows="3" placeholder="List your main skills and expertise..."></textarea><br /><br />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Application Details</legend>
+
+                    <label for="message">Why should we hire you? <span>*</span></label><br />
+                    <textarea id="message" name="message" rows="6" required placeholder="Tell us about yourself, your relevant experience, and why you're interested in this position..."></textarea><br /><br />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <label>
+                        <input type="checkbox" name="remote_willing" /> I'm willing to work remotely
+                    </label><br /><br />
+
+                    <label>
+                        <input type="checkbox" name="relocation_willing" /> I'm willing to relocate for this position
+                    </label><br /><br />
+
+                    <label>
+                        <input type="checkbox" name="subscribe_newsletter" /> Subscribe me to job alerts and company updates
+                    </label><br /><br />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Agreements</legend>
+
+                    <label>
+                        <input type="checkbox" name="agree_terms" required /> I agree to the terms and conditions
+                    </label><br /><br />
+
+                    <label>
+                        <input type="checkbox" name="agree_privacy" required /> I have read and agree to the privacy policy
+                    </label><br /><br />
+                </fieldset>
+
+                <button type="submit">Submit Application</button>
+                <button type="reset">Clear Form</button>
+            </form>
+
+            <section id="faq">
+                <h2>Application FAQs</h2>
+                <article>
+                    <h3>When will I hear back about my application?</h3>
+                    <p>Most companies respond within 1-2 weeks.</p>
+                </article>
+                <article>
+                    <h3>Can I apply for multiple positions?</h3>
+                    <p>Yes! You can apply to multiple jobs.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Job Portal. All rights reserved.</p>
+            <p><a href="index.html">Return to Home</a></p>
+        </footer>
+    </body>
+</html>
