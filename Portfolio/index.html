@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="body">
+    <header class="header bg-gray-800 text-white flex justify-between items-center p-4">
+        <h1 class="nav font-bold text-xl text-orange-500 flex">Gurkirat <p class="text-white font-bold text-xl">Singh</p></h1>
+        <nav class="nav font-bold">
+            <a href="#projects" class="nav-link px-4">Portfolio</a>
+            <a href="#projects" class="nav-link px-4">Services</a>
+            <a href="#projects" class="nav-link px-4">Experience</a>
+            <a href="#projects" class="nav-link px-4">Projects</a>
+            <a href="#education" class="nav-link px-4">Education</a>
+        </nav>
+        <button class="bg-white rounded-md text-gray-800 p-1">
+            <a href="#contact" class="contact-button p-1 py-3 font-bold">Contact Me</a>
+        </button>
+    </header>
+
+    <main class="flex justify-between items-center w-full p-20">
+        <div class="flex flex-col gap-6 max-w-xl">
+            <div>
+                <p class="font-bold text-5xl mb-2">Hi, I'm <span class="text-orange-500">Gurkirat</span></p>
+                <p class="font-semibold text-2xl text-gray-700 mb-4">Full Stack Developer</p>
+                <p class="text-lg text-gray-600 mb-4">I build modern, scalable web applications and love turning ideas into reality. Let's create something amazing together!</p>
+            </div>
+            <div class="flex gap-4 mt-2">
+                <a href="#projects" class="bg-gray-800 text-white p-2 rounded-2xl px-6 py-3 font-bold hover:bg-gray-700 transition">Projects</a>
+                <a href="#contact" class="bg-orange-500 text-white p-2 rounded-2xl px-6 py-3 font-bold hover:bg-orange-600 transition">Contact Me</a>
+            </div>
+        </div>
+        <div class="pr-24 flex items-center"> 
+            <img class="h-96 rounded-full shadow-lg border-4 border-orange-500" src="./img/image.png" alt="Gurkirat Singh">
+        </div>
+    </main>
+
+    <!-- Projects Section -->
+    <section id="projects" class="p-20 bg-gray-100">
+        <h2 class="font-bold text-4xl mb-8">Projects</h2>
+        <div class="flex flex-col gap-6">
+            <article class="bg-white p-6 rounded-lg">
+                <h3 class="font-bold text-2xl text-orange-500 mb-2">E-Commerce Platform</h3>
+                <p class="mb-2">Built a full-stack e-commerce website with user authentication, shopping cart, and payment integration.</p>
+                <p class="font-bold">Tech Stack: React, Node.js, MongoDB, Stripe API</p>
+            </article>
+            <article class="bg-white p-6 rounded-lg">
+                <h3 class="font-bold text-2xl text-orange-500 mb-2">Task Management App</h3>
+                <p class="mb-2">Developed a collaborative task manager with real-time updates and team features.</p>
+                <p class="font-bold">Tech Stack: Vue.js, Express, Socket.io, PostgreSQL</p>
+            </article>
+            <article class="bg-white p-6 rounded-lg">
+                <h3 class="font-bold text-2xl text-orange-500 mb-2">Weather Dashboard</h3>
+                <p class="mb-2">Created a responsive weather application with location-based forecasts and data visualization.</p>
+                <p class="font-bold">Tech Stack: JavaScript, OpenWeather API, Chart.js</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="p-20">
+        <h2 class="font-bold text-4xl mb-8">Skills</h2>
+        <div class="flex flex-col gap-6">
+            <div>
+                <h3 class="font-bold text-2xl text-orange-500 mb-4">Frontend Development</h3>
+                <div class="flex gap-3 flex-wrap">
+                    <span class="bg-gray-800 text-white px-4 py-2 rounded-md">HTML</span>
+                    <span class="bg-gray-800 text-white px-4 py-2 rounded-md">CSS</span>
+                    <span class="bg-gray-800 text-white px-4 py-2 rounded-md">JavaScript</span>
+                    <span class="bg-gray-800 text-white px-4 py-2 rounded-md">React</span>
+                    <span class="bg-gray-800 text-white px-4 py-2 rounded-md">Tailwind CSS</span>
+                    <span class="bg-gray-800 text-white px-4 py-2 rounded-md">Vue.js</span>
+                </div>
+            </div>
+            <div>
+                <h3 class="font-bold text-2xl text-orange-500 mb-4">Backend Development</h3>
+                <div class="flex gap-3 flex-wrap">
+                    <span class="bg-gray-800 text-white px-4 py-2 rounded-md">Node.js</span>
+                    <span class="bg-gray-800 text-white px-4 py-2 rounded-md">Express</span>
+                    <span class="bg-gray-800 text-white px-4 py-2 rounded-md">MongoDB</span>
+                    <span class="bg-gray-800 text-white px-4 py-2 rounded-md">PostgreSQL</span>
+                    <span class="bg-gray-800 text-white px-4 py-2 rounded-md">REST APIs</span>
+                </div>
+            </div>
+            <div>
+                <h3 class="font-bold text-2xl text-orange-500 mb-4">Tools & Others</h3>
+                <div class="flex gap-3 flex-wrap">
+                    <span class="bg-gray-800 text-white px-4 py-2 rounded-md">Git</span>
+                    <span class="bg-gray-800 text-white px-4 py-2 rounded-md">GitHub</span>
+                    <span class="bg-gray-800 text-white px-4 py-2 rounded-md">VS Code</span>
+                    <span class="bg-gray-800 text-white px-4 py-2 rounded-md">Docker</span>
+                    <span class="bg-gray-800 text-white px-4 py-2 rounded-md">Postman</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="p-20 bg-gray-100">
+        <h2 class="font-bold text-4xl mb-8">Education</h2>
+        <div class="flex flex-col gap-6">
+            <article class="bg-white p-6 rounded-lg">
+                <h3 class="font-bold text-2xl text-orange-500">BE - CSE</h3>
+                <p class="font-bold text-xl mt-2">Chandigarh University</p>
+                <p class="text-gray-600 mt-1">2024 - 2028</p>
+                <p class="mt-3">Relevant Coursework: Data Structures, Algorithms, Web Development, Database Management, Software Engineering</p>
+            </article>
+            <article class="bg-white p-6 rounded-lg">
+                <h3 class="font-bold text-2xl text-orange-500">Senior Secondary (12th)</h3>
+                <p class="font-bold text-xl mt-2">School</p>
+                <p class="text-gray-600 mt-1">2024</p>
+                <p class="mt-3">Stream: Science (PCM)</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="p-20">
+        <h2 class="font-bold text-4xl mb-8 text-center mx-auto">Contact Me</h2>
+        <div class="flex justify-between gap-12">
+            <!-- Left Side - Contact Info (Fuller) -->
+            <div class="flex flex-col gap-8 w-1/2 justify-center">
+                <p class="text-2xl font-semibold text-gray-800 mb-2">Let's Connect!</p>
+                <p class="text-lg text-gray-700 mb-4">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Reach out through any of the ways below:</p>
+                <ul class="list-disc list-inside text-lg text-gray-700 mb-4">
+                    <li>Email for work inquiries or collaborations</li>
+                    <li>Phone for quick chats or urgent matters</li>
+                    <li>LinkedIn for professional networking</li>
+                    <li>GitHub for open source and code</li>
+                </ul>
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-3">
+                        <span class="font-bold text-xl text-orange-500">Email:</span>
+                        <a href="mailto:gurkirat@example.com" class="text-gray-800 hover:text-orange-500">gurkirat@example.com</a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="font-bold text-xl text-orange-500">Phone:</span>
+                        <a href="tel:+911234567890" class="text-gray-800 hover:text-orange-500">+91 12345 67890</a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="font-bold text-xl text-orange-500">LinkedIn:</span>
+                        <a href="#" class="text-gray-800 hover:text-orange-500">linkedin.com/in/gurkiratsingh</a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="font-bold text-xl text-orange-500">GitHub:</span>
+                        <a href="#" class="text-gray-800 hover:text-orange-500">github.com/gurkiratsingh</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Contact Form with left spacing -->
+            <div class="w-1/2 pl-12">
+                <form class="flex flex-col gap-4 bg-gray-100 p-8 rounded-lg">
+                    <div class="flex flex-col">
+                        <label for="name" class="font-bold mb-2">Name</label>
+                        <input type="text" id="name" class="p-3 rounded-md border border-gray-300" placeholder="Your Name" required>
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="email" class="font-bold mb-2">Email</label>
+                        <input type="email" id="email" class="p-3 rounded-md border border-gray-300" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="subject" class="font-bold mb-2">Subject</label>
+                        <input type="text" id="subject" class="p-3 rounded-md border border-gray-300" placeholder="Subject" required>
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="message" class="font-bold mb-2">Message</label>
+                        <textarea id="message" rows="5" class="p-3 rounded-md border border-gray-300" placeholder="Your Message..." required></textarea>
+                    </div>
+                    <button type="submit" class="bg-orange-500 text-white px-8 py-3 rounded-2xl font-bold">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white text-center p-6">
+        <p>&copy; 2026 Gurkirat Singh. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
