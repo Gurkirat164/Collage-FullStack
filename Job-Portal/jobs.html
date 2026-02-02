@@ -3,107 +3,150 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="output.css">
         <title>Available Jobs - Job Portal</title>
     </head>
-    <body>
-        <header>
-            <h1>Available Jobs</h1>
-            <p>Explore exciting career opportunities</p>
+    <body class="bg-gray-50 font-sans">
+        <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-12 px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-center mb-2">Available Jobs</h1>
+            <p class="text-center text-lg text-blue-100">Explore exciting career opportunities</p>
         </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="jobs.html">Browse Jobs</a></li>
-                <li><a href="post-job.html">Post a Job</a></li>
-                <li><a href="apply.html">Apply</a></li>
+        <nav class="bg-white shadow-md sticky top-0 z-10">
+            <ul class="flex justify-center space-x-8 py-4 px-4">
+                <li><a href="index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a></li>
+                <li><a href="jobs.html" class="text-blue-600 font-semibold hover:text-blue-800 transition">Browse Jobs</a></li>
+                <li><a href="post-job.html" class="text-gray-700 hover:text-blue-600 transition">Post a Job</a></li>
+                <li><a href="apply.html" class="text-gray-700 hover:text-blue-600 transition">Apply</a></li>
             </ul>
         </nav>
 
-        <main>
-            <section id="job-listings">
-                <h2>Current Job Openings</h2>
-                <p>Total openings: 4</p>
+        <main class="max-w-5xl mx-auto px-4 py-8">
+            <section id="job-listings" class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">Current Job Openings</h2>
+                <p class="text-gray-600 mb-8">Total openings: 4</p>
 
-                <article>
-                    <h3>Web Developer</h3>
-                    <dl>
-                        <dt>Company:</dt>
-                        <dd>ABC Tech Solutions</dd>
-                        <dt>Location:</dt>
-                        <dd>Remote</dd>
-                        <dt>Experience:</dt>
-                        <dd>2+ years</dd>
-                        <dt>Salary:</dt>
-                        <dd>$60,000 - $90,000/year</dd>
-                        <dt>Skills:</dt>
-                        <dd>HTML, CSS, JavaScript, React, Node.js</dd>
+                <article class="border border-gray-200 rounded-lg p-6 mb-6 hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Web Developer</h3>
+                    <dl class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <dt class="text-sm font-semibold text-gray-600">Company:</dt>
+                            <dd class="text-gray-800">ABC Tech Solutions</dd>
+                        </div>
+                        <div>
+                            <dt class="text-sm font-semibold text-gray-600">Location:</dt>
+                            <dd class="text-gray-800">Remote</dd>
+                        </div>
+                        <div>
+                            <dt class="text-sm font-semibold text-gray-600">Experience:</dt>
+                            <dd class="text-gray-800">2+ years</dd>
+                        </div>
+                        <div>
+                            <dt class="text-sm font-semibold text-gray-600">Salary:</dt>
+                            <dd class="text-gray-800">$60,000 - $90,000/year</dd>
+                        </div>
+                        <div class="md:col-span-2">
+                            <dt class="text-sm font-semibold text-gray-600">Skills:</dt>
+                            <dd class="text-gray-800">HTML, CSS, JavaScript, React, Node.js</dd>
+                        </div>
                     </dl>
-                    <a href="apply.html">Apply Now</a>
+                    <a href="apply.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition font-semibold">Apply Now</a>
                 </article>
 
-                <hr>
+                <hr class="my-6 border-gray-300">
 
-                <article>
-                    <h3>Graphic Designer</h3>
-                    <dl>
-                        <dt>Company:</dt>
-                        <dd>Creative Studio</dd>
-                        <dt>Location:</dt>
-                        <dd>Delhi</dd>
-                        <dt>Experience:</dt>
-                        <dd>1+ years</dd>
-                        <dt>Salary:</dt>
-                        <dd>₹25,000 - ₹40,000/month</dd>
-                        <dt>Skills:</dt>
-                        <dd>Adobe Creative Suite, UI/UX, Figma</dd>
+                <article class="border border-gray-200 rounded-lg p-6 mb-6 hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Graphic Designer</h3>
+                    <dl class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <dt class="text-sm font-semibold text-gray-600">Company:</dt>
+                            <dd class="text-gray-800">Creative Studio</dd>
+                        </div>
+                        <div>
+                            <dt class="text-sm font-semibold text-gray-600">Location:</dt>
+                            <dd class="text-gray-800">Delhi</dd>
+                        </div>
+                        <div>
+                            <dt class="text-sm font-semibold text-gray-600">Experience:</dt>
+                            <dd class="text-gray-800">1+ years</dd>
+                        </div>
+                        <div>
+                            <dt class="text-sm font-semibold text-gray-600">Salary:</dt>
+                            <dd class="text-gray-800">₹25,000 - ₹40,000/month</dd>
+                        </div>
+                        <div class="md:col-span-2">
+                            <dt class="text-sm font-semibold text-gray-600">Skills:</dt>
+                            <dd class="text-gray-800">Adobe Creative Suite, UI/UX, Figma</dd>
+                        </div>
                     </dl>
-                    <a href="apply.html">Apply Now</a>
+                    <a href="apply.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition font-semibold">Apply Now</a>
                 </article>
 
-                <hr>
+                <hr class="my-6 border-gray-300">
 
-                <article>
-                    <h3>Marketing Executive</h3>
-                    <dl>
-                        <dt>Company:</dt>
-                        <dd>Growth Corp</dd>
-                        <dt>Location:</dt>
-                        <dd>Mumbai</dd>
-                        <dt>Experience:</dt>
-                        <dd>Fresher</dd>
-                        <dt>Salary:</dt>
-                        <dd>₹20,000 - ₹30,000/month</dd>
-                        <dt>Skills:</dt>
-                        <dd>Digital Marketing, Social Media</dd>
+                <article class="border border-gray-200 rounded-lg p-6 mb-6 hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Marketing Executive</h3>
+                    <dl class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <dt class="text-sm font-semibold text-gray-600">Company:</dt>
+                            <dd class="text-gray-800">Growth Corp</dd>
+                        </div>
+                        <div>
+                            <dt class="text-sm font-semibold text-gray-600">Location:</dt>
+                            <dd class="text-gray-800">Mumbai</dd>
+                        </div>
+                        <div>
+                            <dt class="text-sm font-semibold text-gray-600">Experience:</dt>
+                            <dd class="text-gray-800">Fresher</dd>
+                        </div>
+                        <div>
+                            <dt class="text-sm font-semibold text-gray-600">Salary:</dt>
+                            <dd class="text-gray-800">₹20,000 - ₹30,000/month</dd>
+                        </div>
+                        <div class="md:col-span-2">
+                            <dt class="text-sm font-semibold text-gray-600">Skills:</dt>
+                            <dd class="text-gray-800">Digital Marketing, Social Media</dd>
+                        </div>
                     </dl>
-                    <a href="apply.html">Apply Now</a>
+                    <a href="apply.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition font-semibold">Apply Now</a>
                 </article>
 
-                <hr>
+                <hr class="my-6 border-gray-300">
 
-                <article>
-                    <h3>Mobile App Developer</h3>
-                    <dl>
-                        <dt>Company:</dt>
-                        <dd>Tech Innovations</dd>
-                        <dt>Location:</dt>
-                        <dd>Bangalore</dd>
-                        <dt>Experience:</dt>
-                        <dd>3+ years</dd>
-                        <dt>Salary:</dt>
-                        <dd>₹50,000 - ₹75,000/month</dd>
-                        <dt>Skills:</dt>
-                        <dd>Flutter, Swift, Kotlin</dd>
+                <article class="border border-gray-200 rounded-lg p-6 mb-6 hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Mobile App Developer</h3>
+                    <dl class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <dt class="text-sm font-semibold text-gray-600">Company:</dt>
+                            <dd class="text-gray-800">Tech Innovations</dd>
+                        </div>
+                        <div>
+                            <dt class="text-sm font-semibold text-gray-600">Location:</dt>
+                            <dd class="text-gray-800">Bangalore</dd>
+                        </div>
+                        <div>
+                            <dt class="text-sm font-semibold text-gray-600">Experience:</dt>
+                            <dd class="text-gray-800">3+ years</dd>
+                        </div>
+                        <div>
+                            <dt class="text-sm font-semibold text-gray-600">Salary:</dt>
+                            <dd class="text-gray-800">₹50,000 - ₹75,000/month</dd>
+                        </div>
+                        <div class="md:col-span-2">
+                            <dt class="text-sm font-semibold text-gray-600">Skills:</dt>
+                            <dd class="text-gray-800">Flutter, Swift, Kotlin</dd>
+                        </div>
                     </dl>
-                    <a href="apply.html">Apply Now</a>
+                    <a href="apply.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition font-semibold">Apply Now</a>
                 </article>
             </section>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Job Portal. All rights reserved.</p>
-            <p><a href="index.html">Return to Home</a></p>
+        <footer class="bg-gray-800 text-white py-8 px-4 mt-12">
+            <div class="max-w-5xl mx-auto text-center">
+                <p class="mb-2">&copy; 2026 Job Portal. All rights reserved.</p>
+                <p><a href="index.html" class="text-blue-400 hover:text-blue-300">Return to Home</a></p>
+            </div>
         </footer>
     </body>
 </html>
