@@ -3,96 +3,105 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="output.css">
         <title>Job Portal - Find Your Dream Job</title>
     </head>
-    <body>
-        <header>
-            <h1>Job Portal</h1>
-            <p>Your gateway to career opportunities</p>
+    <body class="bg-gray-50 font-sans">
+        <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-12 px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-center mb-2">Job Portal</h1>
+            <p class="text-center text-lg text-blue-100">Your gateway to career opportunities</p>
         </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="jobs.html">Browse Jobs</a></li>
-                <li><a href="post-job.html">Post a Job</a></li>
-                <li><a href="apply.html">Apply</a></li>
+        <nav class="bg-white shadow-md sticky top-0 z-10">
+            <ul class="flex justify-center space-x-8 py-4 px-4">
+                <li><a href="index.html" class="text-blue-600 font-semibold hover:text-blue-800 transition">Home</a></li>
+                <li><a href="jobs.html" class="text-gray-700 hover:text-blue-600 transition">Browse Jobs</a></li>
+                <li><a href="post-job.html" class="text-gray-700 hover:text-blue-600 transition">Post a Job</a></li>
+                <li><a href="apply.html" class="text-gray-700 hover:text-blue-600 transition">Apply</a></li>
             </ul>
         </nav>
 
-        <main>
-            <section id="welcome">
-                <h2>Welcome to Job Portal</h2>
-                <p>Find jobs or post openings. Simple. Direct. No nonsense.</p>
+        <main class="max-w-6xl mx-auto px-4 py-8">
+            <section id="welcome" class="text-center mb-12 bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Welcome to Job Portal</h2>
+                <p class="text-xl text-gray-600">Find jobs or post openings. Simple. Direct. No nonsense.</p>
             </section>
 
-            <section id="job-categories">
-                <h2>Browse by Category</h2>
-                <ul>
-                    <li><strong>IT Jobs</strong> - Software, Web Development, Data Science</li>
-                    <li><strong>Design Jobs</strong> - Graphic Design, UI/UX</li>
-                    <li><strong>Remote Jobs</strong> - Work from anywhere</li>
-                    <li><strong>Internships</strong> - Build your experience</li>
+            <section id="job-categories" class="mb-12 bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Browse by Category</h2>
+                <ul class="grid md:grid-cols-2 gap-4">
+                    <li class="bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition"><strong class="text-blue-700">IT Jobs</strong> - Software, Web Development, Data Science</li>
+                    <li class="bg-purple-50 p-4 rounded-lg hover:bg-purple-100 transition"><strong class="text-purple-700">Design Jobs</strong> - Graphic Design, UI/UX</li>
+                    <li class="bg-green-50 p-4 rounded-lg hover:bg-green-100 transition"><strong class="text-green-700">Remote Jobs</strong> - Work from anywhere</li>
+                    <li class="bg-orange-50 p-4 rounded-lg hover:bg-orange-100 transition"><strong class="text-orange-700">Internships</strong> - Build your experience</li>
                 </ul>
             </section>
 
-            <section id="how-it-works">
-                <h2>How It Works</h2>
-                <article>
-                    <h3>For Job Seekers</h3>
-                    <ol>
-                        <li>Browse available job listings</li>
-                        <li>Click on jobs that interest you</li>
-                        <li>Fill out the application form</li>
-                        <li>Track your applications</li>
-                    </ol>
-                </article>
-                <article>
-                    <h3>For Employers</h3>
-                    <ol>
-                        <li>Create a job posting</li>
-                        <li>Set job details and requirements</li>
-                        <li>Review applications</li>
-                        <li>Connect with talented candidates</li>
-                    </ol>
-                </article>
+            <section id="how-it-works" class="mb-12 bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">How It Works</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <article class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-blue-700 mb-4">For Job Seekers</h3>
+                        <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                            <li>Browse available job listings</li>
+                            <li>Click on jobs that interest you</li>
+                            <li>Fill out the application form</li>
+                            <li>Track your applications</li>
+                        </ol>
+                    </article>
+                    <article class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-purple-700 mb-4">For Employers</h3>
+                        <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                            <li>Create a job posting</li>
+                            <li>Set job details and requirements</li>
+                            <li>Review applications</li>
+                            <li>Connect with talented candidates</li>
+                        </ol>
+                    </article>
+                </div>
             </section>
 
-            <section id="featured-opportunities">
-                <h2>Featured Opportunities</h2>
-                <article>
-                    <h3>Senior Full Stack Developer</h3>
-                    <p><strong>Company:</strong> Tech Innovations Inc.</p>
-                    <p><strong>Location:</strong> Remote</p>
-                    <p><strong>Salary Range:</strong> $80,000 - $120,000/year</p>
-                </article>
-                <article>
-                    <h3>UX/UI Designer</h3>
-                    <p><strong>Company:</strong> Creative Solutions</p>
-                    <p><strong>Location:</strong> San Francisco, CA</p>
-                    <p><strong>Salary Range:</strong> $70,000 - $100,000/year</p>
-                </article>
+            <section id="featured-opportunities" class="mb-12 bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Featured Opportunities</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <article class="border border-gray-200 rounded-lg p-6 hover:shadow-xl transition">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Senior Full Stack Developer</h3>
+                        <p class="mb-2"><strong class="text-gray-600">Company:</strong> Tech Innovations Inc.</p>
+                        <p class="mb-2"><strong class="text-gray-600">Location:</strong> Remote</p>
+                        <p class="mb-4"><strong class="text-gray-600">Salary Range:</strong> $80,000 - $120,000/year</p>
+                        <a href="apply.html" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Apply Now</a>
+                    </article>
+                    <article class="border border-gray-200 rounded-lg p-6 hover:shadow-xl transition">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">UX/UI Designer</h3>
+                        <p class="mb-2"><strong class="text-gray-600">Company:</strong> Creative Solutions</p>
+                        <p class="mb-2"><strong class="text-gray-600">Location:</strong> San Francisco, CA</p>
+                        <p class="mb-4"><strong class="text-gray-600">Salary Range:</strong> $70,000 - $100,000/year</p>
+                        <a href="apply.html" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Apply Now</a>
+                    </article>
+                </div>
             </section>
 
-            <section id="faq">
-                <h2>Frequently Asked Questions</h2>
-                <article>
-                    <h3>Is it free to apply for jobs?</h3>
-                    <p>Yes! Job applications are completely free.</p>
+            <section id="faq" class="mb-12 bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
+                <article class="mb-6 pb-6 border-b border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Is it free to apply for jobs?</h3>
+                    <p class="text-gray-600">Yes! Job applications are completely free.</p>
                 </article>
                 <article>
-                    <h3>Can I apply to multiple jobs?</h3>
-                    <p>Absolutely! You can apply to as many jobs as you want.</p>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Can I apply to multiple jobs?</h3>
+                    <p class="text-gray-600">Absolutely! You can apply to as many jobs as you want.</p>
                 </article>
             </section>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Job Portal. All rights reserved.</p>
-            <address>
-                Email: <a href="mailto:support@jobportal.com">support@jobportal.com</a><br>
-                Phone: <a href="tel:+1234567890">+1 (234) 567-890</a>
-            </address>
+        <footer class="bg-gray-800 text-white py-8 px-4 mt-12">
+            <div class="max-w-6xl mx-auto text-center">
+                <p class="mb-4">&copy; 2026 Job Portal. All rights reserved.</p>
+                <address class="not-italic text-gray-300">
+                    Email: <a href="mailto:support@jobportal.com" class="text-blue-400 hover:text-blue-300">support@jobportal.com</a><br>
+                    Phone: <a href="tel:1234567890" class="text-blue-400 hover:text-blue-300">1234567890</a>
+                </address>
+            </div>
         </footer>
     </body>
 </html>
