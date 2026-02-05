@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="output.css">
+        <link rel="stylesheet" href="src/output.css">
         <title>Post a Job - Job Portal</title>
     </head>
     <body class="bg-gray-50 font-sans">
-        <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-12 px-4">
+        <header class="bg-linear-to-r from-blue-600 to-purple-600 text-white py-12 px-4">
             <h1 class="text-4xl md:text-5xl font-bold text-center mb-2">Post a Job Opening</h1>
             <p class="text-center text-lg text-blue-100">Reach out to talented candidates</p>
         </header>
@@ -26,7 +26,7 @@
                 <h2 class="text-xl font-bold text-gray-800">Post Your Job Listing</h2>
             </section>
 
-            <form action="submit-job" method="post" class="bg-white rounded-lg shadow-lg p-8">
+            <form class="bg-white rounded-lg shadow-lg p-8">
                 <fieldset class="border border-gray-300 rounded-lg p-6 mb-6">
                     <legend class="text-xl font-bold text-gray-800 px-2">Basic Job Information</legend>
 
@@ -77,8 +77,8 @@
                 </fieldset>
 
                 <div class="flex gap-4">
-                    <button type="submit" class="flex-1 bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-semibold text-lg">Post Job</button>
-                    <button type="reset" class="flex-1 bg-gray-300 text-gray-700 px-8 py-3 rounded-lg hover:bg-gray-400 transition font-semibold text-lg">Clear Form</button>
+                    <button type="submit"  id="submit_button"class="flex-1 bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-semibold text-lg">Post Job</button>
+                    <button type="reset" id="clear_button" class="flex-1 bg-gray-300 text-gray-700 px-8 py-3 rounded-lg hover:bg-gray-400 transition font-semibold text-lg">Clear Form</button>
                 </div>
             </form>
 
@@ -98,5 +98,6 @@
                 <p><a href="index.html" class="text-blue-400 hover:text-blue-300">Return to Home</a></p>
             </div>
         </footer>
+        <script src="src/index.js"></script>    
     </body>
 </html>
