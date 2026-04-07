@@ -1,0 +1,44 @@
+<!-- 
+Create a Student Task Manager Web Application that allows users to add, complete, filter, and delete tasks.
+Task Input Section 
+Task name input	
+Priority dropdown (Low / Medium / High)
+Add Task button
+Filter Section
+Show All
+Completed@
+Pending -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Task Manager</title>
+</head>
+<body>
+
+    <div class="flex flex-col items-center justify-center min-h-screen bg-gray-700">
+        <h1 class="text-4xl font-bold mb-8 text-gray-300">Student Task Manager</h1>
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+            <div class="mb-4">
+                <input type="text" id="taskInput" placeholder="Enter task name" class="w-full p-2 border border-gray-300 rounded mb-2">
+                <select id="prioritySelect" class="w-full p-2 border border-gray-300 rounded mb-4">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+                <button id="addTaskBtn" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Add Task</button>
+            </div>
+            <div class="mb-4">
+                <button id="filterAllBtn" class="bg-gray-300 text-gray-700 p-2 rounded hover:bg-gray-400 mr-2">Show All</button>
+                <button id="filterCompletedBtn" class="bg-green-500 text-white p-2 rounded hover:bg-green-600 mr-2">Completed</button>
+                <button id="filterPendingBtn" class="bg-yellow-500 text-white p-2 rounded hover:bg-yellow-600">Pending</button>
+            </div>
+            <ul id="taskList" class="list-disc pl-5"></ul>
+        </div>  
+    <script src="script.js"></script>
+</body>
+</html>
