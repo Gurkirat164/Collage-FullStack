@@ -1,0 +1,4 @@
+Q1) Write a function getUsers() that uses fetch and async/await to call: https://jsonplaceholder.typicode.com/users Display only the names of the first 5 users in the console. Handle any error using try...catch.
+
+Q3) Create a React Form with fields: Name, Email and Message
+Use useState to manage input values and display them below the form after submission.
